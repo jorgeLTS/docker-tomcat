@@ -16,7 +16,7 @@ RUN mkdir -p /usr/local/java/ && \
         tar -xzvf jdk1.8.0_221.tar.gz -C /usr/local/java/ && \
         tar -xzvf apache-tomcat-8.0.21.tar.gz -C /usr/local/tomcat/ && \
         update-alternatives --install /usr/bin/java java /usr/local/java/jdk1.8.0_221/bin/java 2 && \
-        cp arial.ttf /usr/local/java/jdk1.8.0_221/jre/lib/fonts/ && \
+        cp *.ttf /usr/local/java/jdk1.8.0_221/jre/lib/fonts/ && \
         rm -rf /home/*
 
 WORKDIR /usr/local/tomcat/apache-tomcat-8.0.21

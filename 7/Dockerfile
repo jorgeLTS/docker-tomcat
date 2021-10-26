@@ -16,7 +16,7 @@ RUN mkdir -p /usr/local/java/ && \
         tar -xzvf jdk1.7.0_80.tar.gz -C /usr/local/java/ && \
         tar -xzvf apache-tomcat-7.0.92.tar.gz -C /usr/local/tomcat/ && \
         update-alternatives --install /usr/bin/java java /usr/local/java/jdk1.7.0_80/bin/java 2 && \
-        cp arial.ttf /usr/local/java/jdk1.7.0_80/jre/lib/fonts/ && \
+        cp *.ttf /usr/local/java/jdk1.7.0_80/jre/lib/fonts/ && \
         rm -rf /home/*
 
 WORKDIR /usr/local/tomcat/apache-tomcat-7.0.92
